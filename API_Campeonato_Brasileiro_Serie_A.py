@@ -35,5 +35,5 @@ for club in clubs:
               f'   {club[14]:>2}   {club[15]:>2}')
                                                         
 print('_' * 94, '\n')
-print(f'\nB\'H\'A - Bendito seja o Pai que está nos céus!\n\nJonh Santos\n')
+print(f'\nB\'H\'A - Bendito seja o Pai que está nos céus!\n')
 print('_' * 94, '\n')

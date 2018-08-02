@@ -15,9 +15,9 @@ for td in info:
 for r_spaces in data:
     clubs.append(r_spaces.split('\n'))
 
-print('_' * 94)
+print(f'{"_" * 94}')
 print(f'\033[32m\n{" Campeonato Brasileiro Série A ":^94}\033[m')
-print('_' * 94, '\n')
+print(f'{"_" * 94} \n')
 print(f'\033[33mClassificação                              P    J    V   E   D   GP   GC    SG   CA   CV   %\033[m\n')
 
 for club in clubs:
@@ -33,7 +33,7 @@ for club in clubs:
         print(f'{club[0]:>3}  {club[1]:>2}  \033[31m{club[3]:<19}\033[m\t\t  {club[5]:>2}   {club[6]:>2}   {club[7]:>2}'
               f'  {club[8]:>2}  {club[9]:>2}   {club[10]:>2}   {club[11]:>2}   {club[12]:>3}   {club[13]:>2}'
               f'   {club[14]:>2}   {club[15]:>2}')
-                                                        
-print('_' * 94, '\n')
-print(f'\nB\'H\'A - Bendito seja o Pai que está nos céus!\n')
-print('_' * 94, '\n')
+
+print(f'\n{"_" * 94} \n')
+print('{:^94}'.format(" B\'H\'A - Bendito seja o Pai que está nos céus! "))
+print(f'{"_" * 94} \n')

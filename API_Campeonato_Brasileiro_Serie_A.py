@@ -35,5 +35,5 @@ for club in clubs:
               f'   {club[14]:>2}   {club[15]:>2}')
 
 print(f'\n{"_" * 94} \n')
-print('{:^94}'.format(" B\'H\'A - Bendito seja o Pai que está nos céus! "))
+print('{:^94}'.format(" B\'H\'A - Bendito seja o Pai que estás nos céus! "))
 print(f'{"_" * 94} \n')

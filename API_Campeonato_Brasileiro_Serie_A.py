@@ -10,7 +10,7 @@ soup = BeautifulSoup(request.text, 'html.parser')
 info = soup.find_all('tr', class_="expand-trigger")
 
 for td in info:
-    data.append(td.get_text()[3:-12].strip())
+    data.append(td.get_text()[3:-12])
 
 for r_spaces in data:
     clubs.append(r_spaces.split('\n'))
@@ -35,5 +35,5 @@ for club in clubs:
               f'   {club[14]:>2}   {club[15]:>2}')
 
 print(f'\n{"_" * 94} \n')
-print('{:^94}'.format(" B\'H\'A - Bendito seja o Pai que estás nos céus! "))
+print('{:^94}'.format(" B\'H\'A - Bendito seja o Pai que está nos céus! "))
 print(f'{"_" * 94} \n')

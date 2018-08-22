@@ -14,7 +14,7 @@ for td in info:
 print(f'\n{"_" * 94}')
 print(f'\033[32m\n{" Campeonato Brasileiro Série A ":^94}\033[m')
 print(f'{"_" * 94} \n')
-print(f'\033[33mClassificação                        P    J    V    E    D   GP   GC    SG   CA   CV   %\033[m\n')
+print(f'\033[33mClassificação                            P    J    V    E    D   GP   GC    SG   CA   CV   %\033[m\n')
 
 for club in clubs:
     if club in clubs[0:4]:
@@ -33,5 +33,3 @@ for club in clubs:
 print(f'\n{"_" * 94} \n')
 print('{:^94}'.format(" B\'H\'A - Bendito seja o Pai que está nos céus! "))
 print(f'{"_" * 94} \n')
-
- 

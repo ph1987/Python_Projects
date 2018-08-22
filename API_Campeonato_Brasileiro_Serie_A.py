@@ -9,7 +9,7 @@ soup = BeautifulSoup(request.text, 'html.parser')
 info = soup.find_all('tr', class_='expand-trigger')
 
 for td in info:
-    clubs.append(td.get_text()[3:-10].split('\n'))
+    clubs.append(td.get_text()[3:70].split('\n'))
 
 print(f'\n{"_" * 94}')
 print(f'\033[32m\n{" Campeonato Brasileiro Série A ":^94}\033[m')

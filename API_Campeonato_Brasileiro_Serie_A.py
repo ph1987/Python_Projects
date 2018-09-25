@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 clubs = []
 
 request = requests.get('https://www.cbf.com.br/futebol-brasileiro/competicoes/campeonato-brasileiro-serie-a')
-soup = BeautifulSoup(request.text, 'html.parser')
+soup = BeautifulSoup(request.text, 'xml')
 info = soup.find_all('tr', class_='expand-trigger')
 
 for td in info:

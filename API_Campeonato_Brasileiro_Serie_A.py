@@ -33,3 +33,5 @@ for club in clubs:
 print(f'\n{"_" * 94} \n')
 print('{:^94}'.format(" B\'H\'A - Bendito seja o Pai que está nos céus! "))
 print(f'{"_" * 94} \n')
+
+ 

@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 clubs = []
 
 request = requests.get('https://www.cbf.com.br/futebol-brasileiro/competicoes/campeonato-brasileiro-serie-a')
-soup = BeautifulSoup(request.text, 'html.parser')
+soup = BeautifulSoup(request.text, 'xml')
 info = soup.find_all('tr', class_='expand-trigger')
 
 for td in info:
@@ -14,24 +14,22 @@ for td in info:
 print(f'\n{"_" * 94}')
 print(f'\033[32m\n{" Campeonato Brasileiro Série A ":^94}\033[m')
 print(f'{"_" * 94} \n')
-print(f'\033[33mClassificação                            P    J    V    E    D   GP   GC    SG   CA   CV    %\033[m\n')
+print(f'\033[33mClassificação                            P    J    V    E    D   GP   GC    SG    CA   CV    %\033[m\n')
 
 for club in clubs:
     if club in clubs[0:4]:
         print(f'{club[0]:>3}  {club[1]:>2}  \033[36m{club[3]:<19}\033[m\t\t{club[5]:>2}   {club[6]:>2}   {club[7]:>2}'
-              f'   {club[8]:>2}   {club[9]:>2}   {club[10]:>2}   {club[11]:>2}   {club[12]:>3}   {club[13]:>2}'
+              f'   {club[8]:>2}   {club[9]:>2}   {club[10]:>2}   {club[11]:>2}   {club[12]:>3}   {club[13]:>3}'
               f'   {club[14]:>2}   {club[15]:>2}')
     elif club in clubs[4:16]:
         print(f'{club[0]:>3}  {club[1]:>2}  {club[3]:<19}\t\t{club[5]:>2}   {club[6]:>2}   {club[7]:>2}'
-              f'   {club[8]:>2}   {club[9]:>2}   {club[10]:>2}   {club[11]:>2}   {club[12]:>3}   {club[13]:>2}'
+              f'   {club[8]:>2}   {club[9]:>2}   {club[10]:>2}   {club[11]:>2}   {club[12]:>3}   {club[13]:>3}'
               f'   {club[14]:>2}   {club[15]:>2}')
     elif club in clubs[16:20]:
         print(f'{club[0]:>3}  {club[1]:>2}  \033[31m{club[3]:<19}\033[m\t\t{club[5]:>2}   {club[6]:>2}   {club[7]:>2}'
-              f'   {club[8]:>2}   {club[9]:>2}   {club[10]:>2}   {club[11]:>2}   {club[12]:>3}   {club[13]:>2}'
+              f'   {club[8]:>2}   {club[9]:>2}   {club[10]:>2}   {club[11]:>2}   {club[12]:>3}   {club[13]:>3}'
               f'   {club[14]:>2}   {club[15]:>2}')
 
 print(f'\n{"_" * 94} \n')
 print('{:^94}'.format(" B\'H\'A - Bendito seja o Pai que está nos céus! "))
 print(f'{"_" * 94} \n')
-
- 

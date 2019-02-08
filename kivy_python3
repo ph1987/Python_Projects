@@ -12,7 +12,6 @@ apt install -y \
     python3-pip \
     build-essential \
     git \
-    python \
     python3-dev \
     ffmpeg \
     libsdl2-dev \
@@ -35,12 +34,11 @@ apt install -y \
 # Instalar pacotes de sistema necessários
     
 apt install -y \
-    python-pip \
+    python3-pip \
     build-essential \
     mercurial \
     git \
-    python \
-    python-dev \
+    python3-dev \
     ffmpeg \
     libsdl-image1.2-dev \
     libsdl-mixer1.2-dev \

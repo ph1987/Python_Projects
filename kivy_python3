@@ -1,5 +1,5 @@
 
-# Instalando python3-kivy no Linux Mint e Umbuto
+# Instalando python3-kivy no Linux Mint e Unbuto
 
 # Instalar Kivy:
 
@@ -60,7 +60,7 @@ pip3 install --upgrade virtualenv setuptools
 # (isto irá usar o interpretador em /usr/bin/python3.76):
 virtualenv --no-site-packages -p /usr/bin/python3.6 kivylab
 
-# Digite o virtualenv:
+# Digite o seguinte comando para entrar dentro do virtualenv:
 
 . kivylab/bin/activate
 
@@ -71,5 +71,15 @@ pip3 install Cython==0.28.2
 # Instale a versão estável do Kivy no virtualenv:
 
 pip3 install kivy
+
+# Dentro do seu virtualenv você cria seus códigos:
+
+Ex: nano teste.py
+
+Ex: mousepad teste.py
+
+# Para ver seus projetos dentro do virtualenv digite o comando ls:
+
+ls
 
 #
